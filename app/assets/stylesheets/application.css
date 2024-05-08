@@ -1,0 +1,60 @@
+:root {
+  /* Russian Violet */
+  --violet-100: #c4a1ff;
+  --violet-200: #8843ff;
+  --violet-300: #5400e4;
+  --violet-400: #310087;
+  --violet-500: #10002b;
+  --violet-600: #0c0021;
+  --violet-700: #090018;
+  --violet-800: #060010;
+  --violet-900: #030008;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--violet-100);
+  color: var(--violet-900);
+}
+
+body {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --text-sm: calc(0.75rem + ((1vw - 7.68px) * 0.3472));
+    --text-md: calc(1rem + ((1vw - 7.68px) * 0.3472));
+    --text-lg: calc(1.5rem + ((1vw - 7.68px) * 0.6944));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --text-sm: 16px;
+    --text-md: 20px;
+    --text-lg: 32px;
+  }
+}
