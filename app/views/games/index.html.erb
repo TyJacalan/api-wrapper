@@ -1,0 +1,13 @@
+<%= stylesheet_link_tag 'games/index' %>
+<%= stylesheet_link_tag 'games/shared' %>
+
+<div class='games-container'>
+  <% @games[:results].each do |game| %>
+    <%= link_to game_path(game[:id]) do %>
+      <div class='game-item'>
+        <%= image_tag game[:background_image], alt: game[:name], class: 'game-img' %>
+        <h2 class='game-title'><%= game[:name] %></h2>
+      </div>
+    <% end %>
+  <% end %>
+</div>

@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  before_action :set_client, only: [:show]
+  before_action :set_client, only: [:index, :show]
 
   def index
     @games = Rails.cache.fetch('top_games', expires_in: 12.hours) do
@@ -14,6 +14,7 @@ class GamesController < ApplicationController
     @creators =     fetch_from_cache_or_api('development-team')
     @game =         fetch_from_cache_or_api
     @series =       fetch_from_cache_or_api('game-series')
+    @stores =       fetch_from_cache_or_api('stores')
     @trailer =      fetch_from_cache_or_api('movies')
   end
 
