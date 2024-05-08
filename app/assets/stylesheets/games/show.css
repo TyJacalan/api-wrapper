@@ -1,0 +1,108 @@
+/* container styles */
+
+.game-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.game-info {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.game-summary {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+/* component styles */
+
+.game-achievements {
+  height: fit;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.game-achievement {
+  height: 5rem;
+  width: auto;
+}
+
+.game-description {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.game-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-header > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.game-media {
+  height: auto;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: none;
+}
+
+.game-item {
+  height: inherit;
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+  text-align: center;
+  font-size: var(--text-sm);
+}
+
+.game-related {
+  height: 40rem;
+  width: 100%;
+}
+
+.game-summary-item {
+  height: fit;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--accent);
+}
+
+.creators-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.platforms-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}

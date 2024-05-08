@@ -9,6 +9,8 @@
   --violet-700: #090018;
   --violet-800: #060010;
   --violet-900: #030008;
+  
+  --accent: #d3d3d3;
 }
 
 *, *::after, *::before {
@@ -22,11 +24,15 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 html {
   height: 100vh;
   width: 100vw;
-  background-color: var(--violet-100);
-  color: var(--violet-900);
+  background-color: var(--violet-400);
+  color: var(--violet-100);
 }
 
 body {
