@@ -11,7 +11,7 @@ bundle install && yarn install
 3. Set the environment variables:
 ```
 RAWG_BASE_URL: https://api.rawg.io/api
-RAWG_API_KEY: <create a developer account at [rawg]([url](https://rawg.io/))> 
+RAWG_API_KEY: <create a developer account at rawg
 ```
 4. Run the application
 `bin/rails s`
