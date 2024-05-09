@@ -1,6 +1,6 @@
 # API WRAPPER
 
-An sample application that consumes the [rawg api]([url](https://api.rawg.io/docs/)) and makes all of the endpoints (free-tier) available. The application itself showcases an application of the `games` endpoints, it's different filters and suffixes.
+An sample application that consumes the [rawg api]([url](https://api.rawg.io/docs/) and makes all of the endpoints (free-tier) available. The application itself showcases an application of the `games` endpoints, it's different filters and suffixes.
 
 ## Application Usage
 1. Install dependencies
