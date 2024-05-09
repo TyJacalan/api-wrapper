@@ -6,7 +6,7 @@
   <div>
     <p><%= @game[:rating] %></p> 
     <% if @game[:website] %>
-      <p><%= @game[:website] %></p>
+      <%= link_to @game[:website] %>
     <% end %>
     <% if @game[:reddit_url] %>
       <%= link_to @game[:reddit_url] do %>
@@ -20,11 +20,9 @@
 
 <div class='game-container'>
   <div class='game-info'>
-    <% if @trailer[:results].present? %>
-      <div class='game-media'>
-        <%= video_tag @trailer[:results].first[:data][:max], autoplay: true %>
-      </div>
-    <% end %>
+    <div class='game-media'>
+      <%= video_tag @trailer[:results].first[:data][:max], size: '720x540', controls: true, autoplay: true %>
+    </div>
 
     <div class='game-description'>
       <%= format_game_description(@game[:description][/\<p\>(.*?)\<\/p\>/m, 1]) %>

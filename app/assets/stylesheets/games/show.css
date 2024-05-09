@@ -63,11 +63,11 @@
 }
 
 .game-media {
-  height: auto;
+  height: 100%;
   width: 100%;
   aspect-ratio: 16 / 9;
-  display: none;
 }
+
 
 .game-item {
   height: inherit;
